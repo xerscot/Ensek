@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e01970dc-2bc3-4f32-9de0-b0811d14a019": {
+      "ProjectGuid": "e01970dc-2bc3-4f32-9de0-b0811d14a019",
+      "DisplayName": "ReadingsAPI",
+      "ColorIndex": 0
+    },
+    "8b8c3d45-b8ce-4731-9d3e-c1319e08ce84": {
+      "ProjectGuid": "8b8c3d45-b8ce-4731-9d3e-c1319e08ce84",
+      "DisplayName": "ReadingsAPI",
+      "ColorIndex": 1
+    },
+    "bbf5bfa5-6f7c-437a-a59b-77185048cdef": {
+      "ProjectGuid": "bbf5bfa5-6f7c-437a-a59b-77185048cdef",
+      "DisplayName": "ReadingsAPI",
+      "ColorIndex": 2
+    },
+    "c7681b47-17fd-4dbe-aafe-0d29e22a69d3": {
+      "ProjectGuid": "c7681b47-17fd-4dbe-aafe-0d29e22a69d3",
+      "DisplayName": "ReadingsAPI.Tests",
+      "ColorIndex": 3
+    },
+    "cbe5030a-b5f7-4586-94fe-2c143fe62a99": {
+      "ProjectGuid": "cbe5030a-b5f7-4586-94fe-2c143fe62a99",
+      "DisplayName": "ReadingsAPI.Tests",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}
