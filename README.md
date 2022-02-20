@@ -1,7 +1,7 @@
 # Ensek
 Remote Technical Exercise
 
-#Docker
+# Docker
 
 Start the ReadingsAPI by running the following command in the folder 'EnsekTechTest'
 
