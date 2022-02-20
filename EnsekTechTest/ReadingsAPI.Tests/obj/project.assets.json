@@ -8139,11 +8139,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\src\\TTE\\EnsekTechTest\\ReadingsAPI.Tests\\ReadingsAPI.Tests.csproj",
+      "projectUniqueName": "E:\\src\\ENSEK\\Test\\Ensek\\EnsekTechTest\\ReadingsAPI.Tests\\ReadingsAPI.Tests.csproj",
       "projectName": "ReadingsAPI.Tests",
-      "projectPath": "E:\\src\\TTE\\EnsekTechTest\\ReadingsAPI.Tests\\ReadingsAPI.Tests.csproj",
+      "projectPath": "E:\\src\\ENSEK\\Test\\Ensek\\EnsekTechTest\\ReadingsAPI.Tests\\ReadingsAPI.Tests.csproj",
       "packagesPath": "C:\\Users\\xande\\.nuget\\packages\\",
-      "outputPath": "E:\\src\\TTE\\EnsekTechTest\\ReadingsAPI.Tests\\obj\\",
+      "outputPath": "E:\\src\\ENSEK\\Test\\Ensek\\EnsekTechTest\\ReadingsAPI.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8164,8 +8164,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\src\\TTE\\EnsekTechTest\\ReadingsAPI\\ReadingsAPI.csproj": {
-              "projectPath": "E:\\src\\TTE\\EnsekTechTest\\ReadingsAPI\\ReadingsAPI.csproj"
+            "E:\\src\\ENSEK\\Test\\Ensek\\EnsekTechTest\\ReadingsAPI\\ReadingsAPI.csproj": {
+              "projectPath": "E:\\src\\ENSEK\\Test\\Ensek\\EnsekTechTest\\ReadingsAPI\\ReadingsAPI.csproj"
             }
           }
         }

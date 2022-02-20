@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  readingsapi:
+    image: ${DOCKER_REGISTRY-}readingsapi
+    build:
+      context: .
+      dockerfile: ReadingsAPI/Dockerfile

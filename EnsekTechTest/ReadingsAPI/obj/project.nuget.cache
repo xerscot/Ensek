@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ywv43omonzNmTANDzg2Y+m6++5TSxLEgQJdrj3BiMShi9CyG2AFic44Ei3gp/oTGGlDm+j1zEHnOzKvfAaWjLA==",
+  "dgSpecHash": "sKudzMA3pqY3g5kbTgRPpVbyWwDdBJ2ShC3PBzFnYmajsLuMZ67chwhNo14tlQnfxCOO4IcO9WGVjZUaubLRqQ==",
   "success": true,
-  "projectFilePath": "E:\\src\\TTE\\EnsekTechTest\\ReadingsAPI\\ReadingsAPI.csproj",
+  "projectFilePath": "E:\\src\\ENSEK\\Test\\Ensek\\EnsekTechTest\\ReadingsAPI\\ReadingsAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xande\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\xande\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.2\\microsoft.data.sqlite.core.6.0.2.nupkg.sha512",

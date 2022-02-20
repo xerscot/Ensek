@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ekErd8rVR4TavrogWeF8+3VGcOEkiomPu5CRuUXENFkkBF0QoRW0fIxSgQQRV2WHoODL6ctbvuD0yBOStzIyOw==",
+  "dgSpecHash": "FmvsI+b09aatMNGAUKj3tvmR8wYu0J3oZpKCBHsn+yjkkX1wuONzB6SuPSjShmCAt0q2FH4PAT5NckjdMoxzrQ==",
   "success": true,
-  "projectFilePath": "E:\\src\\TTE\\EnsekTechTest\\ReadingsAPI.Tests\\ReadingsAPI.Tests.csproj",
+  "projectFilePath": "E:\\src\\ENSEK\\Test\\Ensek\\EnsekTechTest\\ReadingsAPI.Tests\\ReadingsAPI.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xande\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\xande\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\6.0.2\\microsoft.aspnetcore.mvc.testing.6.0.2.nupkg.sha512",
