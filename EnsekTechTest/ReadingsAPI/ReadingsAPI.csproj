@@ -10,7 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Readings.db" />
     <None Remove="SeedData\Test_Accounts.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Readings.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

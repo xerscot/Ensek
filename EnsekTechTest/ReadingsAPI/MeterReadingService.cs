@@ -141,8 +141,9 @@
         private bool IsReadingOlder(string[] row)
         {
             var readingDate = Convert.ToDateTime(row[1]);
+            var accountid = Convert.ToInt32(row[0]);
             var readings = _db.MeterReadings
-                .Where(m => m.MeterReadingDateTime < readingDate)
+                .Where(m => m.AccountId == accountid && m.MeterReadingDateTime < readingDate)
                 .Select(a => new { a.AccountId });
 
             return readings.Any();
