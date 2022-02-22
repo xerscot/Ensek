@@ -42,14 +42,6 @@ app.MapGet("/readings", async (ReadingsDbContext db) =>
     return await db.MeterReadings.ToListAsync();
 });
 
-app.MapPost("/readings", async (ReadingsDbContext db, MeterReading reading) =>
-{
-    await db.MeterReadings.AddAsync(reading);
-    await db.SaveChangesAsync();
-
-    return Results.Created($"/reading/{reading.Id}", reading);
-});
-
 app.MapPost("/meter-reading-uploads", async Task<IResult> (ReadingsDbContext db, HttpRequest request) =>
 {
     if (!request.HasFormContentType)

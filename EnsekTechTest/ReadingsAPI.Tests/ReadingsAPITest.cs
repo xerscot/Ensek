@@ -11,9 +11,9 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Xunit;
 
-namespace Samples.Tests
+namespace ReadingsAPI.Tests
 {
-    public class ReadingsTest
+    public class ReadingsAPITest
     {
         [Fact]
         public async Task GetAccounts()
@@ -24,6 +24,33 @@ namespace Samples.Tests
             var accounts = await client.GetFromJsonAsync<List<Account>>("/accounts");
 
             Assert.Empty(accounts);
+        }
+
+        [Fact]
+        public async Task PostAccount()
+        {
+            await using var application = new ReadingsApplication();
+
+            var client = application.CreateClient();
+            var response = await client.PostAsJsonAsync("/accounts", new Account { AccountId = 9988, FirstName = "Harry", LastName = "Test" });
+
+            Assert.Equal(HttpStatusCode.Created, response.StatusCode);
+
+            var accounts = await client.GetFromJsonAsync<List<Account>>("/accounts");
+
+            var account = Assert.Single(accounts);
+            Assert.Equal(9988, account.AccountId);
+        }
+
+        [Fact]
+        public async Task GetReadings()
+        {
+            await using var application = new ReadingsApplication();
+
+            var client = application.CreateClient();
+            var readings = await client.GetFromJsonAsync<List<MeterReading>>("/readings");
+
+            Assert.Empty(readings);
         }
     }
 

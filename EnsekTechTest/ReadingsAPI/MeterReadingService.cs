@@ -3,7 +3,7 @@
     public class MeterReadingService
     {
         private ReadingsDbContext? _db;
-        private List<MeterReadingResult>? MeterReadingResults { get; set; }
+        public List<MeterReadingResult>? MeterReadingResults { get; set; }
         private List<MeterReading>? MeterReadings { get; set; }
         public MeterReadingService(ReadingsDbContext db)
         {
@@ -59,11 +59,6 @@
             if (MeterReadingResults == null)
                 return;
 
-            if (row.Length > 3)
-            {
-                MeterReadingResults.Add(new MeterReadingResult() { Success = false, Message = "Invalid Field Count" });
-                return;
-            }
             if(!IsReadingValid(row))
             {
                 return;
@@ -98,8 +93,14 @@
             }
         }
 
-        private bool IsReadingValid(string[] row)
+        public bool IsReadingValid(string[] row)
         {
+            if (row.Length > 3)
+            {
+                MeterReadingResults.Add(new MeterReadingResult() { Success = false, Message = "Invalid Field Count" });
+                return false;
+            }
+
             var reading = row[2].ToString();
             if (reading == "")
             {
@@ -129,7 +130,7 @@
             return true;
         }
 
-        private bool IsAccountInDb(int accountId)
+        public bool IsAccountInDb(int accountId)
         {
             var accounts = _db.Accounts
                 .Where(a => a.AccountId == accountId)
@@ -138,18 +139,18 @@
             return accounts.Any();
         }
 
-        private bool IsReadingOlder(string[] row)
+        public bool IsReadingOlder(string[] row)
         {
             var readingDate = Convert.ToDateTime(row[1]);
             var accountid = Convert.ToInt32(row[0]);
             var readings = _db.MeterReadings
-                .Where(m => m.AccountId == accountid && m.MeterReadingDateTime < readingDate)
+                .Where(m => m.AccountId == accountid && m.MeterReadingDateTime > readingDate)
                 .Select(a => new { a.AccountId });
 
             return readings.Any();
         }
 
-        private bool IsRowInDb(MeterReading reading)
+        public bool IsRowInDb(MeterReading reading)
         {
             var readings = _db.MeterReadings
                 .Where(m => m.AccountId == reading.AccountId && m.MeterReadingDateTime == reading.MeterReadingDateTime && m.MeterReadValue == reading.MeterReadValue)
